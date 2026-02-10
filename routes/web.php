@@ -1,7 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\HTTP\Request;
 
+
+Route::get('/contacto'), function(Request $request) {
+    print _r($request);
+    echo "</pre>";
+
+
+}
 /*
 |--------------------------------------------------------------------------
 | Web Routes
